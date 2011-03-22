@@ -78,24 +78,86 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
-
+.div-ider {clear:both;}
 
 /* REWIRED STATE NORFOLK */
 
+@font-face {
+    font-family: 'VollkornRegular';
+    src: url('Vollkorn-Regular-webfont.eot');
+    src: url('Vollkorn-Regular-webfont.eot?iefix') format('eot'),
+         url('Vollkorn-Regular-webfont.woff') format('woff'),
+         url('Vollkorn-Regular-webfont.ttf') format('truetype'),
+         url('Vollkorn-Regular-webfont.svg#webfontNg8SQWLd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'VollkornBold';
+    src: url('Vollkorn-Bold-webfont.eot');
+    src: url('Vollkorn-Bold-webfont.eot?iefix') format('eot'),
+         url('Vollkorn-Bold-webfont.woff') format('woff'),
+         url('Vollkorn-Bold-webfont.ttf') format('truetype'),
+         url('Vollkorn-Bold-webfont.svg#webfontJxRRhfTP') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'VollkornItalic';
+    src: url('Vollkorn-Italic-webfont.eot');
+    src: url('Vollkorn-Italic-webfont.eot?iefix') format('eot'),
+         url('Vollkorn-Italic-webfont.woff') format('woff'),
+         url('Vollkorn-Italic-webfont.ttf') format('truetype'),
+         url('Vollkorn-Italic-webfont.svg#webfontDzVwoiMp') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'VollkornBoldItalic';
+    src: url('Vollkorn-BoldItalic-webfont.eot');
+    src: url('Vollkorn-BoldItalic-webfont.eot?iefix') format('eot'),
+         url('Vollkorn-BoldItalic-webfont.woff') format('woff'),
+         url('Vollkorn-BoldItalic-webfont.ttf') format('truetype'),
+         url('Vollkorn-BoldItalic-webfont.svg#webfontDwvVGCpS') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 #container {
-    width: 100%;
-    z-index: 9999;
+    width: 900px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin:0 0 0 -450px;
+    font-family:'VollkornRegular', serif;
+    font-size:15px;
 }
 
 header {
-    width:60%;
-    margin: 50px auto 20px auto; 
 }
 
 header h1 {
-    font-size: 30px;
+    font-family:'VollkornBold', serif;
+    font-size: 33px;
+    margin:0 0 10px 0;
+}
+
+strong {
+    font-family:'VollkornBold', serif;
+    font-weight:normal;
+}
+
+em {
+    font-family:'VollkornItalic', serif;
+    font-style:italic; 
 }
 
 header h2 {
@@ -108,28 +170,39 @@ header .slogan {
     font-size: 20px;
 }
 
-div#main {
-    width:60%;
-    margin: auto;
+div#main, footer {
+padding:0 0 0 300px;
+}
+
+footer {
+    margin:0 0 20px 0;
+}
+
+.slogan {
+    position:absolute;
+    top:0;
+    right:0;
+    width:150px;
+    height:150px;
+    background:#ccc;
 }
 
 div#main p {
     margin-bottom: 10px;
+    line-height:1.5;
 }
 
+#actions {
+    margin:0 0 20px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#actions a {
+    width:140px;
+    height:140px;
+    background:#ccc;
+    float:left;
+    margin:0 10px 0 0;
+}
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
