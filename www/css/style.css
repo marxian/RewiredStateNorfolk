@@ -223,7 +223,7 @@ line-height:50px;
 padding:0 10px 0 0;
 }
 
-@media all and (max-width: 990px) {
+@media all and (max-width: 990px) , (max-height: 570px) {
 
 html, body {
 overflow:auto;
