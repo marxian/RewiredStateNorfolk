@@ -214,6 +214,15 @@ overflow:hidden;
 #gawker {background:url(../images/gawker.jpg) no-repeat left top}
 #sponsor {background:url(../images/sponsor.jpg) no-repeat left top}
 
+.photo-attribution {
+vertical-align:super;
+text-decoration:none;
+white-space:nowrap;
+height:50px;
+line-height:50px;
+padding:0 10px 0 0;
+}
+
 @media all and (max-width: 990px) {
 
 html, body {
