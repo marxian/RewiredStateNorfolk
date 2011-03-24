@@ -75,10 +75,10 @@ button {  width: auto; overflow: visible; }
 
 body, select, input, textarea {  color: #444; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-a {color: #222;}
-a:active { color: #222; }
+a:link {color: #fff;}
 a:visited {color:#ccc;}
 a:hover {color: #036;}
+a:active {color: #222;}
 
 .div-ider {clear:both;}
 
@@ -141,10 +141,6 @@ background:url(../images/blurry.png);
 color:#fff;
 }
 
-a {
-color:#fff;
-}
-
 #container {
 width: 900px;
 position:absolute;
@@ -194,16 +190,21 @@ padding:0 0 0 290px;
 }
 
 footer {
-    padding:0 0 20px 0;
+height:50px;
+padding:0 0 10px 0;
+}
+
+footer a {
+padding:0 10px 0 0;
 }
 
 .slogan {
-    position:absolute;
-    top:0;
-    right:0;
-    width:200px;
-    height:200px;
-    background:transparent url(../images/not_just_for_geeks.png) no-repeat left top;
+position:absolute;
+top:0;
+right:0;
+width:200px;
+height:200px;
+background:transparent url(../images/not_just_for_geeks.png) no-repeat left top;
 }
 
 .slogan p {
@@ -217,7 +218,7 @@ div#main p {
 }
 
 #actions {
-    margin:0 0 20px 0;
+    margin:0 0 10px 0;
 }
 
 #actions a {
@@ -287,11 +288,10 @@ padding:0 0 460px 0;
 }
 
 .slogan {
-display:none;
-position:absolute;
-bottom:0;
-left:0;
+position:static;
 width:100%;
+height:100px;
+background:#fff url(../images/not_just_small.gif) no-repeat center center;
 }
 
 #actions {
