@@ -75,8 +75,10 @@ button {  width: auto; overflow: visible; }
 
 body, select, input, textarea {  color: #444; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+a {color: #222;}
+a:active { color: #222; }
+a:visited {color:#ccc;}
+a:hover {color: #036;}
 
 .div-ider {clear:both;}
 
@@ -130,15 +132,28 @@ a:hover { color: #036; }
 
 }
 
+html, body {
+overflow:hidden;
+}
+
+body {
+background:url(../images/blurry.png);
+color:#fff;
+}
+
+a {
+color:#fff;
+}
 
 #container {
-    width: 900px;
-    position:absolute;
-    bottom:0;
-    left:50%;
-    margin:0 0 0 -450px;
-    font-family:'VollkornRegular', serif;
-    font-size:15px;
+width: 900px;
+position:absolute;
+bottom:0;
+left:50%;
+margin:0 0 0 -450px;
+font-family:'VollkornRegular', serif;
+font-size:15px;
+z-index:99999;
 }
 
 header {
@@ -170,21 +185,30 @@ header .slogan {
     font-size: 20px;
 }
 
-div#main, footer {
-padding:0 0 0 300px;
+div#main {
+background:url(../images/stephen_fry_inna_mask.png) no-repeat 10px bottom;
+}
+
+div#main {
+padding:0 0 0 290px;
 }
 
 footer {
-    margin:0 0 20px 0;
+    padding:0 0 20px 0;
 }
 
 .slogan {
     position:absolute;
     top:0;
     right:0;
-    width:150px;
-    height:150px;
-    background:#ccc;
+    width:200px;
+    height:200px;
+    background:transparent url(../images/not_just_for_geeks.png) no-repeat left top;
+}
+
+.slogan p {
+height:0;
+overflow:hidden;
 }
 
 div#main p {
@@ -198,11 +222,25 @@ div#main p {
 
 #actions a {
     width:140px;
-    height:140px;
-    background:#ccc;
+    height:156px;
     float:left;
     margin:0 10px 0 0;
 }
+
+#actions a:hover {
+outline:2px solid #fff;
+}
+
+#actions a span {
+display:block;
+height:0;
+overflow:hidden;
+}
+
+#provider {background:url(../images/provider.jpg) no-repeat top left}
+#developer {background:url(../images/developer.jpg) no-repeat top left}
+#gawker {background:url(../images/gawker.jpg) no-repeat top left}
+#sponsor {background:url(../images/sponsor.jpg) no-repeat top left}
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
@@ -223,9 +261,70 @@ div#main p {
 
 }
 
-@media screen and (max-device-width: 480px) {
+@media all and (max-width: 990px) {
 
-  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+html, body {
+overflow:auto;
+}
+
+#container {
+position:static;
+padding:20px 20px 0 20px;
+width:auto;
+margin:0;
+font-size:17px;
+color:#111;
+}
+
+#container a {
+color:#111;
+}
+
+#container #main {
+padding:0;
+background-position:center bottom;
+padding:0 0 460px 0;
+}
+
+.slogan {
+display:none;
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+}
+
+#actions {
+margin:0;
+}
+
+#actions a {
+float:none;
+background:transparent;
+color:#fff;
+width:auto;
+line-height:0.8;
+}
+
+#actions a span {
+height:30px;
+line-height:30px;
+overflow:show;
+font-size:30px;
+text-align:center;
+font-family:'VollkornBoldItalic', serif;
+letter-spacing:2px;
+}
+
+#actions a:hover {
+outline:none;
+color:#111;
+}
+
+h1, footer {
+text-align:center;
+}
+
 }
 
 
