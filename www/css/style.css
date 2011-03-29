@@ -197,6 +197,8 @@ width:140px;
 height:156px;
 float:left;
 margin:0 10px 0 0;
+position:relative;
+text-decoration:none;
 }
 
 #actions a:hover {
@@ -205,14 +207,24 @@ outline:2px solid #fff;
 
 #actions a span {
 display:block;
-height:0;
+width:140px;
+height:156px;
+position:absolute;
+top:0;
+left:0;
+background:url(../images/frame.png) no-repeat left top;
+text-decoration:none;
+color:#222;
+text-align:center;
+font-size:14px;
+padding:129px 0 0 0;
 overflow:hidden;
 }
 
-#provider {background:url(../images/provider.jpg) no-repeat left top}
-#developer {background:url(../images/developer.jpg) no-repeat left top}
-#gawker {background:url(../images/gawker.jpg) no-repeat left top}
-#sponsor {background:url(../images/sponsor.jpg) no-repeat left top}
+#provider {background:url(../images/geese/pamelalink.jpg) no-repeat left top}
+#developer {background:url(../images/geese/homeofbastian.jpg) no-repeat left top}
+#gawker {background:url(../images/geese/davidesimonetti-1.jpg) no-repeat left top}
+#sponsor {background:url(../images/geese/lwr.jpg) no-repeat left top}
 
 .photo-attribution {
 vertical-align:super;
