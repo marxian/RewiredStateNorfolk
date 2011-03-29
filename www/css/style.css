@@ -203,6 +203,7 @@ text-decoration:none;
 
 #actions a:hover {
 outline:2px solid #fff;
+overflow:hidden;
 }
 
 #actions a span {
