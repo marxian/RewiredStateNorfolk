@@ -69,24 +69,25 @@ Norfolk's data. Visualisations, apps, utilities, services&hellip; <strong class=
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
     <script type="text/javascript">
-	
-		gander = {};
-		gander.geese = ['davidesimonetti-1.jpg','homeofbastian.jpg','pamelalink.jpg','lwr.jpg'];	
-		
-		function getGoose() {
-			//thisGoose = geese[Math.floor(Math.random() * geese.length)];
-			indexOfGoose = Math.floor(Math.random() * gander.geese.length);
-			var thisGoose = gander.geese[indexOfGoose];
-			return thisGoose;
-		}
+	    // Goose portraits should be 140x156px
+		var gander = {'developer':['davidesimonetti-1.jpg'],
+		              'sponsor':['homeofbastian.jpg'],
+		              'gawker':['pamelalink.jpg'],
+		              'provider':['lwr.jpg'],
+		              'default_goose':'pamelalink.jpg',
+		              'getGoose':function(goose_type){
+		                  if (this.hasOwnProperty(goose_type) {
+		                      return this[goose_type][Math.floor(Math.random()*this[goose_type].length];
+		                  } else {
+		                      return this.default_goose;
+		                  } 
+		              }};
 		
 		$(document).ready(function() {
 			$('#actions a').each(function() {
-				$(this).css('background-image', 'url(images/geese/' + getGoose() + ')');
-				gander.geese.splice(indexOfGoose, indexOfGoose + 1);
+				$(this).css('background-image', 'url(images/geese/' + gander.getGoose($(this).attr('id')) + ')');
 			});
 		});
-		
 	</script>
 	<!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
