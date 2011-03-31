@@ -270,6 +270,7 @@ background:#fff url(../images/not_just_small.gif) no-repeat center center;
 
 #actions {
 margin:0;
+padding:20px 0;
 }
 
 #actions a {
@@ -281,6 +282,8 @@ line-height:0.8;
 }
 
 #actions a span {
+position:static;
+width:100%;
 height:30px;
 line-height:30px;
 overflow:show;
@@ -288,6 +291,12 @@ font-size:30px;
 text-align:center;
 font-family:'VollkornBoldItalic', serif;
 letter-spacing:2px;
+padding:0;
+background:transparent;
+}
+
+#actions a:hover span {
+color:#fff;
 }
 
 #actions a:hover {
