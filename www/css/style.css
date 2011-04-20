@@ -121,6 +121,7 @@ margin:0 0 0 -450px;
 font-family:'VollkornRegular', serif;
 font-size:14px;
 z-index:99999;
+background:url(../images/stephen_fry_inna_mask.png) no-repeat 10px bottom;
 }
 
 header {
@@ -153,7 +154,6 @@ font-size: 20px;
 }
 
 div#main {
-background:url(../images/stephen_fry_inna_mask.png) no-repeat 10px bottom;
 padding:0 0 0 290px;
 }
 
@@ -173,6 +173,10 @@ right:0;
 width:200px;
 height:200px;
 background:transparent url(../images/not_just_for_geeks.png) no-repeat left top;
+}
+
+h3 {
+margin:0 0 20px 0;
 }
 
 .slogan p {
@@ -234,6 +238,43 @@ line-height:50px;
 padding:0 10px 0 0;
 }
 
+ul#main-nav {
+margin:0;
+padding:0;
+list-style:none;
+margin:0 0 10px 0;
+}
+
+ul#main-nav li {
+display:inline;
+color:#fff;
+font-size:170%;
+font-family: 'VollkornItalic', serif;
+padding:0 5px 0 0;
+}
+
+ul#main-nav li a {
+text-decoration:none;
+padding:0 5px 0 0;
+}
+
+html.data {
+overflow:auto;
+}
+
+body.data #container {
+position:static;
+padding:20px 20px 0 20px;
+width:auto;
+margin:0;
+font-size:17px;
+background:transparent;
+}
+
+body.data #main {
+padding:0;
+}
+
 @media all and (max-width: 990px) , (max-height: 550px) {
 
 html, body {
@@ -247,6 +288,7 @@ width:auto;
 margin:0;
 font-size:17px;
 color:#111;
+background-position:center bottom !important;
 }
 
 #container a {
@@ -255,8 +297,13 @@ color:#111;
 
 #container #main {
 padding:0;
-background-position:center bottom;
 padding:0 0 460px 0;
+}
+
+div#main p img {
+max-width:100%;
+display:block;
+margin:0 auto;
 }
 
 .slogan {
@@ -304,6 +351,14 @@ color:#111;
 
 h1, #footer {
 text-align:center;
+}
+
+ul#main-nav {
+text-align:center;
+}
+
+ul#main-nav li {
+color:#222;
 }
 
 }
